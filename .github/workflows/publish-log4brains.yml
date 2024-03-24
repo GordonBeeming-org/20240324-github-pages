@@ -30,6 +30,7 @@ jobs:
         run: |
           npm install -g log4brains
           log4brains build --basePath "/${{ github.event.repository.name }}"
+          touch .log4brains/out/.nojekyll
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
