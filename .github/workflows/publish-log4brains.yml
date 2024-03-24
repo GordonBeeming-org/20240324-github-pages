@@ -33,7 +33,7 @@ jobs:
       - name: Install and Build Log4brains
         run: |
           npm install -g log4brains
-          log4brains build --basePath "/${{ github.event.repository.name }}"
+          log4brains build --basePath ""
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
