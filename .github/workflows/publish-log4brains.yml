@@ -39,10 +39,9 @@ jobs:
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          repository-name: ${{ github.repository }}-ADRs
-          branch: main
+          branch: adr-docs
           folder: .log4brains/out
           target-folder: ""
-          token: ${{ secrets.ADR_GITHUB_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
           git-config-name: Gordon Beeming Demo ADRs
           git-config-email: demo-adrs@gordonbeeming.com
