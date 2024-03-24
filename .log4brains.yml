@@ -1,0 +1,5 @@
+project:
+  name: Gordon Beeming Demo
+  tz: Australia/Brisbane
+  adrFolder: ./docs/adr
+  packages: []
