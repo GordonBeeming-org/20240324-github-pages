@@ -29,7 +29,7 @@ jobs:
       - name: Install and Build Log4brains
         run: |
           npm install -g log4brains
-          log4brains build --basePath "/${{ github.event.repository.name }}"
+          log4brains build --basePath "/${{ github.event.repository.name }}-ADRs"
           touch .log4brains/out/.nojekyll
 
       - name: Deploy
